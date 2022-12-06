@@ -22,6 +22,7 @@ body {
     justify-content: center;
     height: 100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-div {
@@ -34,12 +35,33 @@ body {
 
 .footer-div>a {
     color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
 
 .flex-center {
     justify-content: center;
 }
 
-.flex-space-around {
+.footer-social-div {
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-div {
+        height: 25%;
+        width: 90%;
+    }
+
+    .footer-social-div {
+        justify-content: center;
+    }
+
+    .footer {
+        height: 20%;
+        padding: 3% 6% 2% 5%;
+    }
 }
